@@ -46,7 +46,7 @@ def game_of_life(world: list[list[int]], nb_iterations: int = 5) -> list[list[in
             html += f"<td>{cell}</td>"
         html += "</tr>\n"
     html += "</table>"
-    # print(html)
+    print(html)
 
     return world
 
