@@ -5,7 +5,7 @@ def fizzBuzz(input: list[int] = [i for i in range(1, 101)],
                 5: "Buzz",
                 # 12: "Lazz"
                 }
-            ):
+            ) -> None:
     for i in input:
         for (divisor, word) in mult_map.items():
             print(word if i % divisor == 0 else "", end = "") # don't attach newline at the end

@@ -19,7 +19,7 @@ assert get_neighbours([[1,0,1],
     Assume valid inputs, so input is a 2d list with len >= 1 where all the lists are the same size and all the elements in the lists are 0 or 1.
     Borders don't wrap around to the other side.
 """
-def game_of_life(world: list[list[int]], nb_iterations: int = 5):
+def game_of_life(world: list[list[int]], nb_iterations: int = 5) -> list[list[int]]:
     for i in range(0, nb_iterations):
         # initialize neighbours matrix as matrix with the same size as input
         neighbours = [[0] * len(world[0]) for _ in range(len(world))]
