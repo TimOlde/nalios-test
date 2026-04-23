@@ -1,3 +1,6 @@
+
+# I also made a little variant on the game of life a little while ago, while I was messing around with p5.js. You can find it in extra/index.html.
+
 def get_neighbours(world: list[list[int]], position: tuple[int, int]) -> int:
     result = 0
     for x in range(position[0] - 1, position[0] + 2):
@@ -43,7 +46,7 @@ def game_of_life(world: list[list[int]], nb_iterations: int = 5) -> list[list[in
             html += f"<td>{cell}</td>"
         html += "</tr>\n"
     html += "</table>"
-    print(html)
+    # print(html)
 
     return world
 

@@ -1,1 +1,0 @@
-starting time 10:07
